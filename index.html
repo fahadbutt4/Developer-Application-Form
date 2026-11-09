@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer application</title>
+</head>
+<body>
+    <form action="result.java" method="post" enctype="multipart/form-data">
+    <h1>Developer Application Form</h1>
+    <p>Are you passionate about technology and want to start your career as a developer? Fill out this form to apply for our Junior Developer Internship Program</p>
+    <h2>1. Personal Information</h2>
+    <label for="name">Full Name:</label>
+    <input type="text" placeholder="" name="name" id="name" required><br>
+    <br>
+    <label for="mail">Email Address:</label>
+    <input type="email" placeholder="" name="mail" id="mail" required>
+    <br>
+    <br>
+   <label for="Phone">Phone Number:</label>
+    <input type="tel" name="phone" id="Phone">
+    <br>
+    <br>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" name="dob" id="dob" required>
+    <h2>2. Educations</h2>
+    <label for="Qualification" >Highest Qualification Degree:</label>
+    <select name="qualification" id="Qualification" required>
+       <option value="" disabled selected>
+    Select Qualification
+</option>
+    <option value="Matric">Matric</option>
+    <option value="Intermadiate">Intermadiate</option>
+    <option value="Bachelors">Bachelors</option>
+    <option value="Masters">Masters</option>
+    </select>
+    <br>
+    <br>
+    <label for="place">University/College name:</label>
+    <input type="text" name="place" id="place">
+    <br>
+    <br>
+    <label for="passing-year">Year of Passing/Expected:</label>
+    <input type="number" name="passing-year" id="passing-year" placeholder="e.g 2025">
+    <h2>3.Programming Skills</h2>
+    <p>Which programming languages or technologies are you familiar with? (Select all that apply)</p>
+    <table>
+        <tr>
+            <td width="350">
+    <label for="101">
+        <input type="checkbox" value="HTML" name="language" id="101">HTML 
+    </label>
+            </td>
+            <td>
+    <label for="105">
+        <input type="checkbox" value="CSS" name="language" id="105">CSS
+         </label>
+         </td>
+         </tr>
+         <tr>
+           <td> 
+         <label for="102">
+            <input type="checkbox" value="Java Script" name="language" id="102">Java Script
+            </label>
+           </td>
+
+           <td>
+            <label for="106">
+                <input type="checkbox" value="Python" name="language" id="106">Python
+                </label>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                <label for="103">
+                <input type="checkbox" value="C++" name="language" id="103">C++
+                </label>
+                </td>
+                
+                <td>
+                <label for="107">
+                <input type="checkbox" value="react" name="language" id="107">React
+                </label>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                <label for="108">
+                <input type="checkbox" value="others" name="language" id="108">Others
+                </label>
+                </td>
+                </tr>
+                <br><br>
+                <tr>
+                    <td colspan="2">
+                <label for="other">If other, Please rectify:</label>
+                <input type="text" name="other" id="other" placeholder="Enter your language">
+            </td>    
+            </tr>
+                </table>
+                <h2>4. Experience</h2>
+                <br>
+                <p>Do you have any prior experience of development?</p>
+                <input type="radio" value="Yes" name="select" id="Yes">
+                <label for="Yes">Yes</label>
+                <input type="radio" value="No" name="select" id="No">
+                <label for="No">No</label>
+                <br><br>
+                <table>
+                    <tr>
+                    <td valign="top">
+                <label for="experience">If Yes, please describe:</label>
+                </td>
+                <td>
+                <textarea name="experience" id="experience" rows="5" cols="25" placeholder="tell us about yourself"></textarea>
+                    </td>
+                    </tr>
+</table>
+<h2>5. Additional Information</h2>
+        <label for="information">Why do you want to join this program?</label>
+        <br>
+        <textarea name="information" id="information" cols="25" rows="5" placeholder="Share your information"></textarea>
+        <h2>6. Upload your Resume</h2>
+        <label for="resume">Choose file:</label>
+        <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx">
+        <br><br>
+        <input type="checkbox" name="agree" id="agree" required>
+        <label for="agree">I agree that information provided above is true and correct</label>
+        <br><br>
+        <input type="submit" name="submit" id="submit">
+        <input type="reset" name="reset" id="reset">
+
+        </form>
+</body>
+</html> 
